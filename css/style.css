@@ -174,9 +174,15 @@
     gap: 30px;
     margin-top: 50px;
   }
+  
   .work-p{
-    position: absolute;
-    bottom: -765px;
+    /*position: absolute;
+    bottom: -765px;*/
+  }
+
+  .work-item{
+    position: relative;
+    overflow: hidden;
   }
   .work-p{
     color: #FFF;
@@ -192,6 +198,17 @@
   width: 370px;
   height: 70px;
   flex-shrink: 0;
+  transition: transform  250ms ease-in-out;
+   transform: translateY(100%);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+  }
+  
+  .work-item:hover .work-p{
+    transform: translateY(75%);
   }
   
   /*.work-item {}
