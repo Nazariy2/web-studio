@@ -275,18 +275,19 @@
     letter-spacing: 0.48px;
     margin-bottom: 30px;
   }
-  .socialmedia-team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    gap: 34px;
-    fill: var(--Whatdo);
-    transition: 0.3s ease 0s;
+  .socialmeadia-team{
+    display: flex; 
+    flex-direction: row;
+    gap: 12px;
+    /* justify-content: center; */
+     /* gap: 12px;   */
+    /* margin-right: 12px; */
+    /* margin-left: 25px; */
+     
   }
-  .socialmedia-team:hover{
-    fill: var(--hederphon);
-  }
+    
+  
+  
   /*clients*/
   .clients-title{
     color: #212121;
