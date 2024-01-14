@@ -28,13 +28,20 @@
         <a class="menu-link" href="./portfolio.html">Портфоліо</a>
       </li>
       <li class="menu-item">
-        <a class="menu-link" href="">Контакти</a>
+        <a class="menu-link" href="#">Контакти</a>
       </li>
     </ul>
     <!--контактна інформація-->
     <ul class="contacts-list">
       <li class="contacts-list-item">
-        <a class="contacts-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <button class="contacts-list-link-modal" data-modal-open>
+          <!-- <a class="contacts-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a> -->
+        </button>
+        <div class="contacts-list-link-backdrop  is-hidden" data-modal>
+          <div class="contacts-list-link-modal-content">
+            
+          </div>
+        </div>
       </li>
       <li class="contacts-list-item">
         <a class="contacts-list-link" href="tel:+380961111111">+38 096 111 11 11</a>
