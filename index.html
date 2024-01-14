@@ -34,14 +34,7 @@
     <!--контактна інформація-->
     <ul class="contacts-list">
       <li class="contacts-list-item">
-        <button class="contacts-list-link-modal" data-modal-open>
-          <!-- <a class="contacts-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a> -->
-        </button>
-        <div class="contacts-list-link-backdrop  is-hidden" data-modal>
-          <div class="contacts-list-link-modal-content">
-            
-          </div>
-        </div>
+        <a class="contacts-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
       </li>
       <li class="contacts-list-item">
         <a class="contacts-list-link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -53,7 +46,60 @@
     <section class="hero">
       <div class="container">
       <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-      <button class="hero-button" type="button">Замовити послугу</button>
+     
+      <!-- MODALS -->
+      <button class="contacts-list-link-modal" data-modal-open>
+         Замовити послугу
+      </button>
+      <div class="contacts-list-link-backdrop  is-hidden"  data-modal>
+        <div class="modal-content">
+          <button class="button-close" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="inherit">
+              <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="inherit"/>
+            </svg>
+        </button>
+        <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <p class="modal-text">Ім'я</p>
+        <form  class="modals-form">
+          <div class="form-home-inputs">
+              <input 
+              required
+              type="text"
+              class="form--input"
+              placeholder="Your name">
+            </form>
+            <p class="modal-text">Телефон</p>
+            <form  class="modals-form">
+              <div class="form-home-inputs">
+                  <input 
+                  required
+                  type="text"
+                  class="form--input"
+                  placeholder="Your name*">
+                </form>
+            <p class="modal-text"> Пошта</p>
+            <form  class="modals-form">
+              <div class="form-home-inputs">
+                  <input 
+                  required
+                  type="text"
+                  class="form--input"
+                  placeholder="Your name*">
+                </form>
+            <p class="modal-text">Коментар </p>    
+            <form  class="modals-form">
+            <textarea
+              class="form-home-textarea" 
+              placeholder="Введіть текст">
+        </textarea></form>
+       </div>
+       <form  class="modals-form">
+       <button type="submit" class="form-home-button">
+        Send message
+    </button></form>
+        </div>
+      </div>
+      <!-- MODALS -->
     </div>
     </section>
     <section class="features">
@@ -637,6 +683,7 @@
   </div>
   </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
